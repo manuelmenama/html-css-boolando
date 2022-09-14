@@ -80,13 +80,14 @@ header .container .mini-top a:hover{
 /* main */
 .row{
   display: inline-block;
-  padding: 50px 0;
+  padding: 50px 0px;
 }
 
 /* card */
 .row .card{
   display: inline-block;
   width: 300px;
+  margin: 10px;
 }
 
 .row .card .product{

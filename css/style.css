@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.debug{
+  background-color: rgba(102, 51, 153, 0.25);
+  border: 1px solid black;
+}
+
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -62,4 +67,20 @@ header .container .mini-top a{
 
 header .container .mini-top a:hover{
   color: blue;
+}
+
+/* main */
+.row{
+  display: inline-block;
+  
+}
+
+.row .card .product{
+  height: 300px;
+  width: 200px;
+}
+
+.row .card{
+  height: 350px;
+  width: 200px;
 }

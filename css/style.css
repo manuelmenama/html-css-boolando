@@ -29,7 +29,6 @@ img{
   font-size: 12px;
   font-weight: 600;
   padding: 5px;
-  position: absolute;
   color: white;
 }
 
@@ -111,29 +110,46 @@ header .container .mini-top a:hover{
   display: none;
 }
 
-.row .card .product .hover:hover .hover.alt{
+.row .card .product:hover .hover.alt{
+  display: block;
+}
+
+.row .card .product:hover .label.like{
   display: block;
 }
 
 /* etichette */
-.row .card .product .label.lb-sost{
-  left: 45px;
+
+
+.card .product .lbl{
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
   bottom: 40px;
+}
+.row .card .product .label.lb-sost{
+  display: inline-block;
   background-color: #008000;
+  margin-right: 5px;
 }
 
-.row .card .product .label.discount{
-  left: 0px;
-  bottom: 40px;
+.row .card .product .lbl .discount{
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .row .card .product .label.like{
+  position: absolute;
   right: 0px;
   top: 15px;
   background-color: white;
   color: black;
   font-size: 20px;
   padding: 5px 10px;
+}
+
+.row .card .product .label.like:hover{
+  color: red;
 }
 
 /* product info */
@@ -159,7 +175,7 @@ header .container .mini-top a:hover{
   color: #ff0000;
 }
 
-.card .product-info .price span:last-child{
+.card .product-info .price span:nth-child(2){
   font-weight: 500;
   text-decoration: line-through;
 }

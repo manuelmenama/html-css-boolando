@@ -33,6 +33,9 @@ img{
 header{
   height: 70px;
   background-color: #ff6900;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 header .container{
@@ -81,6 +84,7 @@ header .container .mini-top a:hover{
 .row{
   display: inline-block;
   padding: 50px 0px;
+  margin-top: 70px;
 }
 
 /* card */

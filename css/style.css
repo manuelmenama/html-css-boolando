@@ -214,6 +214,10 @@ footer{
   color: white;
 }
 
+.foot .f-right a:hover{
+  text-decoration: underline;
+}
+
 .foot .f-right h6{
   margin-bottom: 10px;
 }

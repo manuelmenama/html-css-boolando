@@ -14,7 +14,7 @@ body{
 }
 
 img{
-  max-width: 400px;
+  max-width: 100%;
 }
 .container{
   width: 70%;
@@ -43,6 +43,7 @@ header .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
 }
 
 header .container ul{
@@ -81,29 +82,30 @@ header .container .mini-top a:hover{
 }
 
 /* main */
-.row{
-  display: inline-block;
-  padding: 50px 0px;
-  margin-top: 70px;
+main{
+  padding-top: 120px;
 }
 
 /* card */
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .row .card{
   display: inline-block;
-  width: 300px;
-  margin: 10px;
+  width: calc(100% / 3);
+  min-width: 250px;
+  padding: 10px;
 }
 
 .row .card .product{
   position: relative;
   display: inline-block;
-  width: 300px;
   cursor: pointer;
 }
 
-.row .card .product img{
-  width: 300px;
-}
+
 
 .row .card .product .hover.alt{
   position: absolute;
@@ -224,4 +226,5 @@ footer{
 
 .foot .f-right{
   text-align: right;
+  margin-left: 5px;
 }
